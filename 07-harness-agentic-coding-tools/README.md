@@ -24,6 +24,7 @@ Ao final deste módulo, você será capaz de:
 
 - [Anthropic — Claude Code Documentation](https://docs.claude.com/en/docs/claude-code/overview)
 - [Anthropic — Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [SkillsMP — Marketplace de Skills](https://skillsmp.com/)
 
 ## Pré-requisitos
 

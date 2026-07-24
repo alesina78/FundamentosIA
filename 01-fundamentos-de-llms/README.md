@@ -43,6 +43,7 @@ prática sem custo, adaptando o código dos exemplos à API do Gemini.
 
 - [Anthropic — Documentação da API](https://docs.claude.com/)
 - [Anthropic — Modelos Claude](https://docs.claude.com/en/docs/about-claude/models)
+- [Hugging Face — Model Hub](https://huggingface.co/models)
 
 ## Pré-requisitos
 
