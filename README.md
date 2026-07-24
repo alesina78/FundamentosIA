@@ -4,8 +4,6 @@
 > segura e eficiente no dia a dia — de prompt engineering a agentes, RAG, MCP,
 > desenvolvimento guiado por especificação (SDD) e ferramentas agentic coding (harness).
 
-📝 [Exercícios de fixação por módulo](#módulos-do-curso) · 🎓 [Sobre a certificação oficial](#certificação-oficial-anthropic)
-
 ## Sobre o Curso
 
 | | |
