@@ -14,22 +14,21 @@
 | **Formato** | Repositório Markdown self-paced (aulas, exercícios, flashcards, glossário, homework) |
 | **Linguagem dos exemplos** | Python (sempre que possível, exemplos práticos executáveis) |
 | **Pré-requisitos** | Conhecimento básico de Python; não é necessária experiência prévia com IA |
-| **Duração estimada** | ~30–40h (9 módulos) |
 | **Referência de certificação** | Alinhado a *Claude Certified Developer - Foundations* (Anthropic) |
 
 ## Módulos do Curso
 
-| # | Módulo | Nível | Carga horária |
-|---|--------|-------|----------------|
-| 1 | [Fundamentos de LLMs](01-fundamentos-de-llms/README.md) | Iniciante | ~3h |
-| 2 | [Prompt Engineering](02-prompt-engineering/README.md) | Iniciante | ~4h |
-| 3 | [RAG — Retrieval-Augmented Generation](03-rag-recuperacao-aumentada/README.md) | Intermediário | ~5h |
-| 4 | [Agentes de IA e Tool Use](04-agentes-e-tool-use/README.md) | Intermediário | ~5h |
-| 5 | [MCP — Model Context Protocol](05-mcp-model-context-protocol/README.md) | Intermediário | ~4h |
-| 6 | [SDD — Spec-Driven Development](06-sdd-spec-driven-development/README.md) | Intermediário | ~3h |
-| 7 | [Harness e Agentic Coding Tools](07-harness-agentic-coding-tools/README.md) | Avançado | ~4h |
-| 8 | [Boas Práticas e Uso Responsável](08-boas-praticas-uso-responsavel/README.md) | Todos os níveis | ~3h |
-| 9 | [Fluxo de Trabalho na Prática](09-fluxo-de-trabalho-na-pratica/README.md) | Avançado | ~4h |
+| # | Módulo | Nível |
+|---|--------|-------|
+| 1 | [Fundamentos de LLMs](01-fundamentos-de-llms/README.md) | Iniciante |
+| 2 | [Prompt Engineering](02-prompt-engineering/README.md) | Iniciante |
+| 3 | [RAG — Retrieval-Augmented Generation](03-rag-recuperacao-aumentada/README.md) | Intermediário |
+| 4 | [Agentes de IA e Tool Use](04-agentes-e-tool-use/README.md) | Intermediário |
+| 5 | [MCP — Model Context Protocol](05-mcp-model-context-protocol/README.md) | Intermediário |
+| 6 | [SDD — Spec-Driven Development](06-sdd-spec-driven-development/README.md) | Intermediário |
+| 7 | [Harness e Agentic Coding Tools](07-harness-agentic-coding-tools/README.md) | Avançado |
+| 8 | [Boas Práticas e Uso Responsável](08-boas-praticas-uso-responsavel/README.md) | Todos os níveis |
+| 9 | [Fluxo de Trabalho na Prática](09-fluxo-de-trabalho-na-pratica/README.md) | Avançado |
 
 ## Certificação Oficial (Anthropic)
 

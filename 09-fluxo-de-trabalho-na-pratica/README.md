@@ -1,6 +1,6 @@
 # Módulo 9 — Fluxo de Trabalho na Prática
 
-> Nível: Avançado · Carga horária: ~4h · Módulo de integração — conecta todos os anteriores.
+> Nível: Avançado · Módulo de integração — conecta todos os anteriores.
 
 ## Objetivos de Aprendizagem
 

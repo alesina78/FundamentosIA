@@ -1,6 +1,6 @@
 # Módulo 7 — Harness e Agentic Coding Tools
 
-> Nível: Avançado · Carga horária: ~4h · Cobrado no exame *Claude Certified Developer - Foundations* (Claude Code).
+> Nível: Avançado · Cobrado no exame *Claude Certified Developer - Foundations* (Claude Code).
 
 ## Objetivos de Aprendizagem
 

@@ -1,6 +1,6 @@
 # Módulo 1 — Fundamentos de LLMs
 
-> Nível: Iniciante · Carga horária: ~3h · Base para todos os módulos seguintes.
+> Nível: Iniciante · Base para todos os módulos seguintes.
 
 ## Objetivos de Aprendizagem
 

@@ -1,6 +1,6 @@
 # Módulo 3 — RAG (Retrieval-Augmented Generation)
 
-> Nível: Intermediário · Carga horária: ~5h · Cobrado no exame *Claude Certified Developer - Foundations*.
+> Nível: Intermediário · Cobrado no exame *Claude Certified Developer - Foundations*.
 
 ## Objetivos de Aprendizagem
 

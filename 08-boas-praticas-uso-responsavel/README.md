@@ -1,6 +1,6 @@
 # Módulo 8 — Boas Práticas e Uso Responsável
 
-> Nível: Todos os níveis · Carga horária: ~3h
+> Nível: Todos os níveis
 
 ## Objetivos de Aprendizagem
 

@@ -1,6 +1,6 @@
 # Módulo 2 — Prompt Engineering
 
-> Nível: Iniciante · Carga horária: ~4h · Cobrado no exame *Claude Certified Developer - Foundations*.
+> Nível: Iniciante · Cobrado no exame *Claude Certified Developer - Foundations*.
 
 ## Objetivos de Aprendizagem
 

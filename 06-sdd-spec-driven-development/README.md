@@ -1,6 +1,6 @@
 # Módulo 6 — SDD (Spec-Driven Development)
 
-> Nível: Intermediário · Carga horária: ~3h
+> Nível: Intermediário
 
 ## Objetivos de Aprendizagem
 

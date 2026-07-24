@@ -1,6 +1,6 @@
 # Módulo 5 — MCP (Model Context Protocol)
 
-> Nível: Intermediário · Carga horária: ~4h · Cobrado no exame *Claude Certified Developer - Foundations*.
+> Nível: Intermediário · Cobrado no exame *Claude Certified Developer - Foundations*.
 
 ## Objetivos de Aprendizagem
 
