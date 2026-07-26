@@ -1,4 +1,7 @@
 anthropic
+google-genai
+python-dotenv
 voyageai
+pypdf
 mcp[cli]
 pytest
