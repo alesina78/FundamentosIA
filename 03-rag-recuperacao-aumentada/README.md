@@ -1,6 +1,7 @@
 # Módulo 3 — RAG (Retrieval-Augmented Generation)
 
-> Nível: Intermediário · Cobrado no exame *Claude Certified Developer - Foundations*.
+> Nível: Intermediário · Primeira arquitetura do curso: o LLM deixa de responder sozinho e
+> passa a consultar uma base de conhecimento.
 
 ## Objetivos de Aprendizagem
 

@@ -1,6 +1,7 @@
 # Módulo 2 — Prompt Engineering
 
-> Nível: Iniciante · Cobrado no exame *Claude Certified Developer - Foundations*.
+> Nível: Iniciante · Base para todos os módulos seguintes — RAG, agentes e harness são
+> prompt engineering aplicado.
 
 ## Objetivos de Aprendizagem
 

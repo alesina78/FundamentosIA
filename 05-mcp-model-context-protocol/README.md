@@ -1,6 +1,7 @@
 # Módulo 5 — MCP (Model Context Protocol)
 
-> Nível: Intermediário · Cobrado no exame *Claude Certified Developer - Foundations*.
+> Nível: Intermediário · Como as ferramentas do módulo 4 deixam de viver dentro do seu
+> código e passam a ser reutilizáveis por qualquer cliente.
 
 ## Objetivos de Aprendizagem
 

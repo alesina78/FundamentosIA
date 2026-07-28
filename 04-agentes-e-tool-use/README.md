@@ -1,6 +1,6 @@
 # Módulo 4 — Agentes de IA e Tool Use
 
-> Nível: Intermediário · Cobrado no exame *Claude Certified Developer - Foundations*.
+> Nível: Intermediário · O módulo em que o modelo deixa de só gerar texto e passa a agir.
 
 ## Objetivos de Aprendizagem
 

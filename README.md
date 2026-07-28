@@ -1,8 +1,8 @@
 # IA na Prática para Devs
 
 > Curso livre, em português, para desenvolvedores aprenderem a usar IA de forma correta,
-> segura e eficiente no dia a dia — de prompt engineering a agentes, RAG, MCP,
-> desenvolvimento guiado por especificação (SDD) e ferramentas agentic coding (harness).
+> segura e eficiente no dia a dia — de prompt engineering a agentes, RAG, MCP, ferramentas
+> agentic coding (harness) e desenvolvimento guiado por especificação (SDD).
 
 ## Sobre o Curso
 
@@ -12,7 +12,7 @@
 | **Formato** | Repositório Markdown self-paced (aulas com exemplos práticos em Python) |
 | **Linguagem dos exemplos** | Python (sempre que possível, exemplos práticos executáveis) |
 | **Pré-requisitos** | Conhecimento básico de Python; não é necessária experiência prévia com IA |
-| **Referência de certificação** | Alinhado a *Claude Certified Developer - Foundations* (Anthropic) |
+| **Fontes** | Documentação oficial da Anthropic e do MCP; curso independente, sem vínculo com a Anthropic |
 
 ## Módulos do Curso
 
@@ -47,25 +47,24 @@ Code como uma caixa mágica cheia de features, e sim como engenharia reconhecív
 uma skill economiza contexto, por que um hook é mais confiável que uma instrução no prompt, e
 onde intervir quando o agente faz algo inesperado.
 
-## Certificação Oficial (Anthropic)
+## Sobre as Fontes
 
-A Anthropic mantém o **Claude Certification Program** (via Pearson VUE), com exames
-oficiais proctorizados — entre eles o **Claude Certified Developer - Foundations**, que
-cobre API, integração de agentes, RAG, MCP e Claude Code. Este curso usa esse exame como
-referência de escopo para devs, mas **não é material oficial da Anthropic** nem garante
-aprovação. Os módulos 3, 4, 5 e 6 têm aderência direta aos temas cobrados; os módulos 7 e 9
-tratam de produtividade no desenvolvimento e estão fora do escopo do exame — são conteúdo de
-ofício, não de prova.
+Este é um **curso independente**, sem vínculo com a Anthropic. Não é material oficial, não
+prepara para nenhuma prova e não emite certificado.
 
-Alternativa gratuita: a **Anthropic Academy** oferece cursos oficiais com certificado em
-MCP, Claude API e Claude Code.
+O conteúdo é escrito a partir da documentação pública oficial — a documentação da API da
+Anthropic, a especificação do Model Context Protocol e os guias de engenharia da própria
+Anthropic — mais experiência prática de uso das ferramentas. Cada aula termina com os links
+das fontes que a embasam, para você conferir na origem e acompanhar atualizações.
+
+Se você procura certificação oficial ou cursos com certificado, o caminho é a **Anthropic
+Academy**, que oferece material oficial gratuito sobre MCP, Claude API e Claude Code.
 
 ## Documentação Oficial
 
 - [Anthropic — Documentação da API](https://docs.claude.com/)
 - [Anthropic Academy](https://www.anthropic.com/learn)
 - [Model Context Protocol — Especificação](https://modelcontextprotocol.io/)
-- [Claude Certification Program — Pearson VUE](https://www.pearsonvue.com/us/en/anthropic.html)
 
 ## Pré-requisitos
 
@@ -82,5 +81,6 @@ MCP, Claude API e Claude Code.
 
 ## Licença
 
-Conteúdo educacional de uso livre. Verifique sempre a documentação oficial da Anthropic
-para informações atualizadas sobre produtos, preços e o programa de certificação.
+Conteúdo educacional de uso livre. Curso independente, sem vínculo com a Anthropic —
+"Claude" e "Anthropic" são marcas de seus respectivos donos. Verifique sempre a documentação
+oficial para informações atualizadas sobre produtos, modelos e preços.

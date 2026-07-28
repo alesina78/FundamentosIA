@@ -1,6 +1,7 @@
 # Módulo 6 — Harness e Agentic Coding Tools
 
-> Nível: Avançado · Cobrado no exame *Claude Certified Developer - Foundations* (Claude Code).
+> Nível: Avançado · A virada do curso: do agente que você constrói para a ferramenta que
+> você usa (ex: Claude Code).
 
 ## A virada do curso: deste módulo em diante, o objeto de estudo muda
 
