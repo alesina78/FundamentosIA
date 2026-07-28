@@ -11,6 +11,7 @@ Ao final deste módulo, você será capaz de:
 - Escolher uma estratégia de chunking adequada ao tipo de conteúdo.
 - Decidir entre RAG, fine-tuning e long context para um problema real.
 - Implementar um pipeline RAG simples em Python (embeddings + retrieval + geração).
+- Medir a qualidade do retrieval com recall@k e distinguir falha de busca de falha de geração.
 
 ## Estrutura do Módulo
 
@@ -20,6 +21,7 @@ Ao final deste módulo, você será capaz de:
 | 3.2 | [Embeddings e vector databases](3.2-embeddings-vector-databases.md) |
 | 3.3 | [Chunking e estratégias de indexação](3.3-chunking-estrategias-indexacao.md) |
 | 3.4 | [RAG vs fine-tuning vs long context](3.4-rag-vs-fine-tuning-vs-long-context.md) |
+| 3.5 | [Avaliando o retrieval](3.5-avaliando-o-retrieval.md) |
 
 ## Cadastro e Configuração de Ambiente — Voyage AI
 

@@ -9,7 +9,7 @@
 | | |
 |---|---|
 | **Público-alvo** | Desenvolvedores(as) de software, técnicos, com experiência prévia em programação |
-| **Formato** | Repositório Markdown self-paced (aulas, exercícios, flashcards, glossário, homework) |
+| **Formato** | Repositório Markdown self-paced (aulas com exemplos práticos em Python) |
 | **Linguagem dos exemplos** | Python (sempre que possível, exemplos práticos executáveis) |
 | **Pré-requisitos** | Conhecimento básico de Python; não é necessária experiência prévia com IA |
 | **Referência de certificação** | Alinhado a *Claude Certified Developer - Foundations* (Anthropic) |
