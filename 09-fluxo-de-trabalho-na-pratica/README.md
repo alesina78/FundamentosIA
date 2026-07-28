@@ -10,8 +10,8 @@ Ao final deste módulo, você será capaz de:
 - Usar IA de forma produtiva na escrita de código sem perder controle sobre qualidade.
 - Aplicar IA em testes automatizados e revisão de código (code review assistido).
 - Usar IA para gerar e manter documentação técnica atualizada.
-- Montar seu próprio checklist de fluxo de trabalho combinando RAG, agentes, MCP, SDD e
-  harness conforme o contexto do projeto.
+- Montar seu próprio checklist de fluxo de trabalho combinando RAG, agentes, MCP, harness e
+  SDD conforme o contexto do projeto.
 
 ## Estrutura do Módulo
 

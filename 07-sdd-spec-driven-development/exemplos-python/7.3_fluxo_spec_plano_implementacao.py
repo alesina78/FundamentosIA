@@ -1,5 +1,5 @@
 """Fluxo completo spec -> plano -> implementação -> verificação, cada etapa uma
-chamada de API separada e focada — o padrão que harnesses de agentic coding (módulo 7)
+chamada de API separada e focada — o padrão que harnesses de agentic coding (módulo 6)
 automatizam, mas que você pode reproduzir manualmente com chamadas simples."""
 import anthropic
 

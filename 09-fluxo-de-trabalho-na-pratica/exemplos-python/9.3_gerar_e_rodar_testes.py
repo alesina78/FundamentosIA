@@ -1,5 +1,5 @@
 """Gera testes automatizados a partir de uma função existente e REALMENTE os
-executa — a etapa de verificação da aula 6.3 não pode parar em "o modelo disse que
+executa — a etapa de verificação da aula 7.3 não pode parar em "o modelo disse que
 parece certo": rodar os testes de verdade é o que efetivamente confirma o comportamento."""
 import subprocess
 import tempfile

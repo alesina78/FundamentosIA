@@ -1,6 +1,6 @@
 """Usa IA para transformar uma ideia informal num rascunho estruturado de RFC/design
 doc — um ponto de partida para discussão, não um documento final. A revisão e decisão
-continuam sendo do time (ver módulo 6, sobre specs, e módulo 8.4, revisão humana)."""
+continuam sendo do time (ver módulo 7, sobre specs, e módulo 8.4, revisão humana)."""
 import anthropic
 
 client = anthropic.Anthropic()

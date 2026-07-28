@@ -29,4 +29,4 @@ Ao final deste módulo, você será capaz de:
 [Módulo 4 — Agentes de IA e Tool Use](../04-agentes-e-tool-use/README.md)
 
 ---
-[← Módulo anterior](../04-agentes-e-tool-use/README.md) | [Início do curso](../README.md) | [Próximo módulo →](../06-sdd-spec-driven-development/README.md)
+[← Módulo anterior](../04-agentes-e-tool-use/README.md) | [Início do curso](../README.md) | [Próximo módulo →](../06-harness-agentic-coding-tools/README.md)

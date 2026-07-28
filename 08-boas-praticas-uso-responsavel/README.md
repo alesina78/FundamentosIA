@@ -31,4 +31,4 @@ Ao final deste módulo, você será capaz de:
 Nenhum específico — recomendado após o Módulo 1, pode ser lido a qualquer momento.
 
 ---
-[← Módulo anterior](../07-harness-agentic-coding-tools/README.md) | [Início do curso](../README.md) | [Próximo módulo →](../09-fluxo-de-trabalho-na-pratica/README.md)
+[← Módulo anterior](../07-sdd-spec-driven-development/README.md) | [Início do curso](../README.md) | [Próximo módulo →](../09-fluxo-de-trabalho-na-pratica/README.md)
