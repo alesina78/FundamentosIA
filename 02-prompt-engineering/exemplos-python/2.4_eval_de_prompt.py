@@ -14,12 +14,17 @@ prompt A. Se você mudar o prompt e o dataset ao mesmo tempo, os números deixam
 comparáveis.
 """
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor
 
 import anthropic
 
 client = anthropic.Anthropic()
 
 CATEGORIAS = ["cobranca", "tecnico", "cancelamento", "elogio"]
+
+# Chamadas simultâneas ao rodar o dataset. Suba com cuidado: o limite prático é o rate
+# limit da sua conta, e um eval que toma erro 429 no meio devolve número errado.
+MAX_WORKERS = 5
 
 # Dataset de avaliação: (mensagem, categoria esperada).
 # Inclui casos fáceis e casos de borda de propósito — um dataset só com casos óbvios
@@ -100,9 +105,17 @@ def rodar_eval(nome: str, template: str) -> tuple[float, float]:
     categoria_ok = 0
     print(f"\n--- Eval: {nome} ---")
 
-    for mensagem, esperado in DATASET:
-        saida = classificar(template, mensagem)
+    # Uma chamada por caso do dataset — cada caso precisa ser independente. Mandar as N
+    # mensagens num único prompt faria o modelo ver os outros casos e inferir as categorias
+    # a partir deles, justamente a informação que o prompt A não deveria ter.
+    #
+    # Independentes, porém, elas podem rodar em paralelo: são N round-trips de rede, e em
+    # série o eval fica lento sem necessidade. `executor.map` preserva a ordem do dataset,
+    # então a saída continua legível. O cliente da Anthropic é seguro para uso entre threads.
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        saidas = list(executor.map(lambda caso: classificar(template, caso[0]), DATASET))
 
+    for (mensagem, esperado), saida in zip(DATASET, saidas):
         # Métrica 1 — formato: a saída é exatamente o nome de uma categoria, e nada mais?
         # É o que o seu código precisa para usar a resposta sem pós-processamento.
         formato = saida in CATEGORIAS
@@ -120,6 +133,7 @@ def rodar_eval(nome: str, template: str) -> tuple[float, float]:
             # para a próxima iteração do prompt.
             motivo = "categoria errada" if not acertou else "formato fora do esperado"
             print(f"  [{motivo:<24}] esperado={esperado!r} saída={saida[:60]!r}")
+            print(f"  {'':<26} mensagem: {mensagem}")
 
     n = len(DATASET)
     print(f"  Formato válido:      {formato_ok}/{n} ({formato_ok / n:.0%})")
