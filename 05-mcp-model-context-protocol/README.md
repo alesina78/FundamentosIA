@@ -11,7 +11,7 @@ Ao final deste módulo, você será capaz de:
 - Descrever a arquitetura cliente-servidor do MCP (host, client, server).
 - Criar um servidor MCP simples em Python expondo uma ferramenta.
 - Decidir quando vale a pena construir um servidor MCP vs uma integração direta.
-- Expor um banco Postgres real (hospedado no Render) como servidor MCP, com acesso somente-leitura.
+- Expor os dados de um banco Postgres real (hospedado no Render) como ferramentas MCP.
 
 ## Estrutura do Módulo
 
