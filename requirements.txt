@@ -4,5 +4,4 @@ python-dotenv
 voyageai
 pypdf
 mcp[cli]
-psycopg[binary]
 pytest
