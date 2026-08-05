@@ -10,6 +10,7 @@ Ao final deste módulo, você será capaz de:
 - Explicar o que é o MCP e o problema que ele resolve (padronizar acesso a dados/ferramentas).
 - Descrever a arquitetura cliente-servidor do MCP (host, client, server).
 - Criar um servidor MCP simples em Python expondo uma ferramenta.
+- Encontrar, avaliar e conectar servidores MCP prontos (catálogos, credenciais, quem mantém).
 - Decidir quando vale a pena construir um servidor MCP vs uma integração direta.
 
 ## Estrutura do Módulo
@@ -18,7 +19,7 @@ Ao final deste módulo, você será capaz de:
 |---|------|
 | 5.1 | [Conceito e arquitetura cliente-servidor](5.1-conceito-arquitetura-cliente-servidor.md) |
 | 5.2 | [Criando um servidor MCP simples em Python](5.2-criando-servidor-mcp-python.md) |
-| 5.3 | [Quando e como integrar MCP nos seus workflows](5.3-quando-integrar-mcp.md) |
+| 5.3 | [Conectar ou construir: usando servidores MCP prontos](5.3-quando-integrar-mcp.md) |
 
 ## Documentação Oficial (pt-BR/EN)
 
