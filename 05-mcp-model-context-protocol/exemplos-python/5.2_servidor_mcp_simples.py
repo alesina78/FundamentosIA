@@ -89,5 +89,15 @@ def listar_todos_pedidos() -> str:
     return "\n".join(linhas)
 
 
+@mcp.prompt()
+def resumo_para_cliente(numero_pedido: str) -> str:
+    """Prompt pronto: gera uma mensagem de atualização para enviar ao cliente."""
+    return (
+        f"Consulte o pedido {numero_pedido} e escreva uma mensagem curta e cordial "
+        "para o cliente informando a situação atual. Em português, no máximo 3 frases. "
+        "Se o pedido estiver atrasado, reconheça o atraso antes de dar a nova previsão."
+    )
+
+
 if __name__ == "__main__":
     mcp.run()
