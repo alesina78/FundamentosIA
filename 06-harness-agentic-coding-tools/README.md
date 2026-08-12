@@ -35,7 +35,9 @@ Ao final deste módulo, você será capaz de:
 
 - Explicar o que é um "harness" de agentic coding (ex: Claude Code) e como ele difere de
   um chat comum com IA.
-- Descrever o papel de hooks, skills e subagents num harness.
+- Criar e testar um hook, entendendo o contrato de comunicação com o harness.
+- Instalar uma skill de um catálogo da comunidade e validar se ela dispara na hora certa.
+- Criar um subagente especializado com prompt, modelo e ferramentas próprios.
 - Configurar permissions de forma segura (o que o agente pode executar sem confirmação).
 - Avaliar riscos de dar autonomia a um agente sobre um repositório real.
 
@@ -44,8 +46,10 @@ Ao final deste módulo, você será capaz de:
 | # | Aula |
 |---|------|
 | 6.1 | [O que é um harness de agentic coding](6.1-o-que-e-um-harness.md) |
-| 6.2 | [Hooks, skills e subagents](6.2-hooks-skills-subagents.md) |
-| 6.3 | [Permissions e segurança](6.3-permissions-e-seguranca.md) |
+| 6.2 | [Criando e testando um hook](6.2-criando-e-testando-um-hook.md) |
+| 6.3 | [Instalando e testando uma skill](6.3-instalando-e-testando-uma-skill.md) |
+| 6.4 | [Criando um subagente](6.4-criando-um-subagente.md) |
+| 6.5 | [Permissions e segurança](6.5-permissions-e-seguranca.md) |
 
 ## Documentação Oficial (pt-BR/EN)
 
