@@ -2,7 +2,7 @@
 Um "mini harness" didático: um loop agentic (aula 4.2) com ferramentas de arquivo
 reais (ler e escrever) — a versão simplificada do que um harness de agentic coding
 como Claude Code faz por trás dos panos, mas sem hooks, permissions granulares,
-subagents ou skills (aula 6.2 e 6.3 cobrem essas peças que faltam aqui).
+subagents ou skills (aulas 6.2 a 6.5 cobrem essas peças que faltam aqui).
 
 ATENÇÃO: este script executa escrita de arquivos de verdade no diretório indicado
 por PASTA_DE_TRABALHO. Rode em uma pasta de teste/descartável.
@@ -44,7 +44,7 @@ tools = [
 
 def caminho_seguro(nome_arquivo: str) -> str:
     """Confina toda operação de arquivo à pasta de trabalho — nunca confie
-    diretamente num path vindo do modelo (ver aula 6.3, sobre segurança)."""
+    diretamente num path vindo do modelo (ver aula 6.5, sobre segurança)."""
     caminho = os.path.abspath(os.path.join(PASTA_DE_TRABALHO, nome_arquivo))
     raiz = os.path.abspath(PASTA_DE_TRABALHO)
     if not caminho.startswith(raiz):
