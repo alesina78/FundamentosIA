@@ -1,8 +1,15 @@
 """Compara o resultado de pedir código direto ("vibe coding") vs. pedir a partir de
-uma especificação estruturada — mesmo pedido de negócio, prompts diferentes."""
+uma especificação estruturada — mesmo pedido de negócio, prompts diferentes.
+
+As duas saídas são gravadas em `saidas/`, ao lado deste arquivo, para você comparar os
+resultados lado a lado num editor em vez de rolar o terminal."""
+from pathlib import Path
+
 import anthropic
 
 client = anthropic.Anthropic()
+
+PASTA_SAIDA = Path(__file__).parent / "saidas"
 
 
 def gerar_codigo(prompt: str) -> str:
@@ -12,6 +19,13 @@ def gerar_codigo(prompt: str) -> str:
         messages=[{"role": "user", "content": prompt}],
     )
     return r.content[0].text
+
+
+def salvar(nome_arquivo: str, conteudo: str) -> Path:
+    PASTA_SAIDA.mkdir(exist_ok=True)
+    caminho = PASTA_SAIDA / nome_arquivo
+    caminho.write_text(conteudo, encoding="utf-8")
+    return caminho
 
 
 # "Vibe coding": pedido vago, sem definir regras de negócio, formato de erro, limites.
@@ -44,8 +58,13 @@ prompt_spec_driven = f"Implemente a função Python a seguir, exatamente conform
 
 
 if __name__ == "__main__":
-    print("=== Vibe coding (prompt vago) ===")
-    print(gerar_codigo(prompt_vibe))
+    resultados = {
+        "vibe_coding.md": gerar_codigo(prompt_vibe),
+        "spec_driven.md": gerar_codigo(prompt_spec_driven),
+    }
 
-    print("\n\n=== Spec-driven (especificação clara) ===")
-    print(gerar_codigo(prompt_spec_driven))
+    # A spec também vale como artefato: é ela que documenta o que foi pedido.
+    resultados["spec.md"] = spec
+
+    for nome, conteudo in resultados.items():
+        print(f"Gravado: {salvar(nome, conteudo)}")
