@@ -26,7 +26,6 @@
 | 6 | [Harness e Agentic Coding Tools](06-harness-agentic-coding-tools/README.md) | Avançado |
 | 7 | [SDD — Spec-Driven Development](07-sdd-spec-driven-development/README.md) | Intermediário |
 | 8 | [Boas Práticas e Uso Responsável](08-boas-praticas-uso-responsavel/README.md) | Todos os níveis |
-| 9 | [Fluxo de Trabalho na Prática](09-fluxo-de-trabalho-na-pratica/README.md) | Avançado |
 
 ## O Arco do Curso
 
@@ -37,9 +36,9 @@ elas:
 API, escreve prompts, monta um pipeline RAG, implementa um agente com tool use e expõe
 ferramentas por MCP. O sistema em estudo é o que você programa.
 
-**Parte II — Trabalhar com IA (módulos 6 a 9).** O objeto de estudo passa a ser a ferramenta
+**Parte II — Trabalhar com IA (módulos 6 a 8).** O objeto de estudo passa a ser a ferramenta
 que você usa para programar, e o seu próprio processo: o harness (módulo 6), a metodologia de
-pedir (módulo 7), o uso responsável (módulo 8) e o fluxo de trabalho completo (módulo 9).
+pedir (módulo 7) e o uso responsável (módulo 8).
 
 A ordem não é acidental. Um harness de agentic coding **é** um loop agentic com permissões e
 gestão de contexto — as mesmas peças do módulo 4. Quem construiu um agente não vê o Claude
@@ -77,7 +76,7 @@ Academy**, que oferece material oficial gratuito sobre MCP, Claude API e Claude 
 
 1. Siga os módulos na ordem — cada um assume conceitos dos anteriores.
 2. Rode os exemplos em Python de cada aula; não apenas leia o código.
-3. Ao final, o módulo 9 conecta tudo num fluxo de trabalho real de desenvolvimento com IA.
+3. Ao final, o módulo 8 fecha o curso com as boas práticas e o uso responsável no dia a dia.
 
 ## Licença
 

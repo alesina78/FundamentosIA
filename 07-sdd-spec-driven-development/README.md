@@ -8,12 +8,8 @@ O módulo 6 apresentou a ferramenta; este apresenta **o método de trabalhar com
 harness executa o que você pede — a qualidade do resultado depende da qualidade do pedido, e
 SDD é a disciplina de formular esse pedido.
 
-Vale distinguir deste módulo o módulo 9, que volta ao mesmo terreno com outro recorte:
-
-| Módulo | Pergunta que responde |
-|---|---|
-| **7 (este)** | Como se escreve uma spec boa, e como se vai dela ao código |
-| **9** | Onde a spec entra no ciclo real de trabalho, ao lado de testes, revisão, documentação e CI |
+A pergunta que este módulo responde é: como se escreve uma spec boa, e como se vai dela ao
+código.
 
 ## Objetivos de Aprendizagem
 
