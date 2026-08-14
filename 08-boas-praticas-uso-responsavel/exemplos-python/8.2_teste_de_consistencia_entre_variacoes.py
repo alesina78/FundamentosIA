@@ -35,12 +35,18 @@ def perguntar(prompt: str, temperature: float = 1.0) -> str:
 
 
 def extrair_numero(texto: str) -> float | None:
-    """Primeiro número da resposta, ignorando separadores de milhar."""
-    m = re.search(r"\d[\d.,]*", texto)
-    if not m:
+    """Converte a resposta em número, mas SÓ se ela for essencialmente um número.
+
+    Buscar o primeiro dígito de qualquer resposta é uma armadilha: em "Não tenho
+    dados sobre o censo de 1970" o primeiro número é o ano da própria pergunta, e a
+    recusa entraria na estatística como se fosse uma resposta. Como os prompts pedem
+    "apenas o número", tudo que vier além disso é tratado como ausência de resposta.
+    """
+    limpo = texto.strip().rstrip(".").replace("R$", "").strip()
+    if not re.fullmatch(r"\d[\d.,]*", limpo):
         return None
     try:
-        return float(m.group().replace(".", "").replace(",", "."))
+        return float(limpo.replace(".", "").replace(",", "."))
     except ValueError:
         return None
 
@@ -53,14 +59,22 @@ def teste_de_consistencia(pergunta: str, n_execucoes: int = N_REPETICOES) -> Non
         print(f"  [{i}] {r.strip()[:100]}")
 
     numeros = [n for n in (extrair_numero(r) for r in respostas) if n is not None]
+    recusas = len(respostas) - len(numeros)
+    print(f"  -> {len(numeros)}/{len(respostas)} respostas com um número;"
+          f" {recusas} recusa(s) ou resposta(s) em texto.")
+
+    if recusas:
+        print("  -> Recusar é o comportamento DESEJADO: o modelo reconheceu que não tem"
+              " o dado em vez de inventar um número plausível.")
     if len(numeros) < 2:
-        print("  -> Sem números suficientes para comparar (o modelo pode ter se recusado"
-              " a responder — o que já é o comportamento desejado).")
+        print("  -> Poucos números para medir dispersão. Uma resposta numérica isolada,"
+              " no meio de recusas, é a menos confiável de todas — o modelo não é"
+              " consistente nem na decisão de responder.")
         return
 
     menor, maior = min(numeros), max(numeros)
-    print(f"  -> {len(numeros)} valores numéricos | menor={menor:g} maior={maior:g}"
-          f" | amplitude={maior - menor:g} | desvio={statistics.pstdev(numeros):.1f}")
+    print(f"  -> menor={menor:g} maior={maior:g} | amplitude={maior - menor:g}"
+          f" | desvio={statistics.pstdev(numeros):.1f}")
     print("  -> Amplitude alta = o modelo está gerando um número plausível a cada vez,"
           " não recuperando um fato (módulo 1.3).")
 
