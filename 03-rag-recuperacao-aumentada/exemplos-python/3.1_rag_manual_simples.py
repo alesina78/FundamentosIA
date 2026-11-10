@@ -1,11 +1,16 @@
 """
-RAG "manual" sem vector database — só para entender o conceito de retrieval + generation.
-Numa aplicação real, a busca por palavra-chave abaixo seria substituída por busca
-vetorial (aula 3.2), mas o fluxo geral (buscar -> montar contexto -> gerar) é o mesmo.
+RAG "manual" adaptado para usar o Google Gemini no lugar do Claude.
+Mantém o mesmo conceito de retrieval + generation, ideal para testes locais.
 """
-import anthropic
+import os
+from google import genai
 
-client = anthropic.Anthropic()
+# Inicializa o cliente do Gemini. 
+# Dica: O ideal é salvar a chave no ambiente (ex: export GEMINI_API_KEY="sua_chave") 
+# ou passá-la diretamente no client(api_key="...").
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+
+CATEGORIAS = ["cobranca", "tecnico", "cancelamento", "elogio"]
 
 # Nossa "base de conhecimento": documentos curtos e independentes.
 documentos = [
@@ -18,8 +23,7 @@ documentos = [
 
 
 def buscar_documentos_relevantes(pergunta: str, documentos: list[str], top_k: int = 2) -> list[str]:
-    """Busca ingênua por sobreposição de palavras — só para fins didáticos.
-    Em produção, isso seria uma busca vetorial (embeddings + similaridade)."""
+    """Busca ingênua por sobreposição de palavras — só para fins didáticos."""
     palavras_pergunta = set(pergunta.lower().split())
     pontuados = []
     for doc in documentos:
@@ -43,12 +47,13 @@ Informações disponíveis:
 
 Pergunta do cliente: {pergunta}
 """
-    r = client.messages.create(
-        model="claude-haiku-4-5",
-        max_tokens=200,
-        messages=[{"role": "user", "content": prompt}],
+    
+    # Chamada para o modelo Gemini corrigida para um modelo ativo e estável
+    resposta = client.models.generate_content(
+        model="gemini-3.5-flash",
+        contents=prompt,
     )
-    return r.content[0].text
+    return resposta.text
 
 
 if __name__ == "__main__":
