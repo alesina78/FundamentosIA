@@ -14,6 +14,7 @@
 | **Pré-requisitos** | Conhecimento básico de Python; não é necessária experiência prévia com IA |
 | **Fontes** | Documentação oficial da Anthropic e do MCP; curso independente, sem vínculo com a Anthropic |
 
+
 ## Módulos do Curso
 
 | # | Módulo | Nível |
@@ -83,3 +84,8 @@ Academy**, que oferece material oficial gratuito sobre MCP, Claude API e Claude 
 Conteúdo educacional de uso livre. Curso independente, sem vínculo com a Anthropic —
 "Claude" e "Anthropic" são marcas de seus respectivos donos. Verifique sempre a documentação
 oficial para informações atualizadas sobre produtos, modelos e preços.
+
+# IA na Prática para Devs
+
+> [!NOTE]
+> **Repositório de Estudos:** Este repositório contém as minhas resoluções e códigos práticos executados durante o curso idealizado e mantido originalmente por [Carlos Oliveira (ckoliveiraa)](https://github.com/ckoliveiraa).
